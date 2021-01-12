@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Test_part_4ModelStoreContainer" CdmEntityContainer="Test_part_4Entities2">
+    <EntitySetMapping Name="Cities">
+      <EntityTypeMapping TypeName="Test_part_4Model.City">
+        <MappingFragment StoreEntitySet="Cities">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="District_ID" ColumnName="District_ID" />
+          <ScalarProperty Name="mayor" ColumnName="mayor" />
+          <ScalarProperty Name="population" ColumnName="population" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Districts">
+      <EntityTypeMapping TypeName="Test_part_4Model.District">
+        <MappingFragment StoreEntitySet="Districts">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Population" ColumnName="Population" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
